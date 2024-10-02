@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+  Barra de navegacion
+  Secciones
+    - Portada
+    - Sobre mi
+    - Productos / servicios
+    - Contacto
+  Footer / Pie de pagina
+  -->
+
+    <!--
+  Estructura semantica basica
+  <header>
+    <h1>
+    <nav>
+  </header>
+  <main>
+    <section>
+      div
+      article
+    </section>
+    <section>
+    <section>
+    <section>
+  </main>
+  <footer>
+  -->
+
+    <!-- Header: El titulo / Logo, Navegacion (nav) -->
+    <header>
+      <h1>Landing</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Sobre Mi</a>
+          </li>
+          <li>
+            <a href="#">Productos</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h2>Bienvenidos a mi pagina</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+            numquam cupiditate autem ab vitae velit. Dolore minima debitis
+            laboriosam quibusdam.
+          </p>
+          <a href="#">Comprar</a>
+        </div>
+
+        <figure>
+          <img src="https://via.placeholder.com/150" alt="" />
+          <figcaption>Esta es una imagen de via placeholder de 150px</figcaption>
+        </figure>
+
+        <code>
+          asdfasdfasdsadf
+        </code>
+      </section>
+
+      <hr>
+
+      <section>
+        <h3>Sobre mí</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem deleniti
+          in, laborum ratione aspernatur nobis nulla esse amet id omnis beatae
+          alias sed rerum assumenda asperiores corrupti cumque eaque sequi
+          debitis voluptatem delectus! Quibusdam, culpa itaque beatae dolor esse
+          molestias doloremque voluptas, voluptatibus voluptatem consequuntur
+          rerum obcaecati qui ad quod.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+          culpa recusandae quasi error facere debitis dignissimos vero fugit
+          sequi quod.
+        </p>
+        <img src="https://via.placeholder.com/500x200" alt="" />
+        <a href="#">Saber más</a>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Productos</h2>
+
+        <!-- Producto 1 -->
+        <article>
+          <img src="https://via.placeholder.com/150" alt="" />
+          <p>Titulo Producto</p>
+          <span>$150</span>
+          <button>Comprar</button>
+        </article>
+
+        <!-- Producto 2 -->
+        <article>
+          <img src="https://via.placeholder.com/150" alt="" />
+          <p>Titulo Producto</p>
+          <span>$150</span>
+          <button>Comprar</button>
+        </article>
+
+        <!-- Producto 3 -->
+        <article>
+          <img src="https://via.placeholder.com/150" alt="" />
+          <p>Titulo Producto</p>
+          <span>$150</span>
+          <button>Comprar</button>
+        </article>
+      </section>
+
+      <section>
+        <h2>Formulario</h2>
+        <p>Acá iria el Formulario</p>
+
+        <form>
+          <!-- etiqueta que le da el contexto de lo que el usuario tiene que ingresar -->
+          <fieldset>
+            <legend>nombre</legend>
+            <!-- <label for="nombre">Nombre:</label> -->
+            <!-- Campo donde el usuario puede escribir -->
+            <input
+              type="text"
+              id="nombre"
+              placeholder="John Doe"
+              required
+              name="nombre"
+            />
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Contraseña</legend>
+
+            <input type="password" id="password" placeholder="*****" />
+            <!-- <label for="password"
+              >Contraseña:
+              <input type="password" id="password" placeholder="*****" />
+            </label> -->
+          </fieldset>
+
+          <br />
+          <br />
+
+          <div>
+            <label for="">Edad:</label>
+            <input type="number" id="age" min="0" max="10" />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+            <!-- <input type="email" id="email"> -->
+          </div>
+
+          <br />
+
+          <div>
+            <input type="checkbox" id="terminos" required />
+            <label for="terminos">Aceptar terminos y condiciones</label>
+          </div>
+
+          <br />
+
+          <div>
+            <p>Pais:</p>
+            <input type="radio" id="argentina" name="pais" />
+            <label for="argentina">Argentina</label>
+
+            <input type="radio" id="brasil" name="pais" />
+            <label for="brasil">Brasil</label>
+
+            <input type="radio" id="mexico" name="pais" />
+            <label for="mexico">Mexico</label>
+          </div>
+
+          <br />
+
+          <div>
+            <p>Piedra papel o tijera</p>
+            <label for="">Selecciona la opcion:</label>
+            <select name="juego">
+              <option value="piedra">Piedra</option>
+              <option value="papel">Papel</option>
+              <option value="tijera">Tijera</option>
+            </select>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="comentarios">Comentarios:</label>
+            <br />
+            <textarea
+              id="comentarios"
+              rows="4"
+              cols="50"
+              maxlength="255"
+            ></textarea>
+          </div>
+
+          <div>
+            <input type="color" />
+          </div>
+
+          <div>
+            <label for="">Cargar archivo</label>
+            <input type="file">
+          </div>
+
+          <!-- <button type="button">Enviar</button> -->
+          <input type="submit" value="Enviar Formulario" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Hecho con 💖 en Nucba</p>
+    </footer>
+  </body>
+</html>
