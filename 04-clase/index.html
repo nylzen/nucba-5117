@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titulo</title>
+    <style>
+      /* *{
+        border: 1px solid red;
+      } */
+
+      #hero {
+        display: flex;
+        justify-content: center;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      menu {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      git switch nombreRama(para moverno de rama)
+      git switch -c nombreRama (creamos rama y nos movemos a ella directamente)
+      git branch (listamos las ramas)
+      git branch nombreRama (creamos rama)
+
+      git merge nombreRama (mergeamos rama, A DONDE ESTAMOS PARADOS)
+    -->
+    <header>
+      <img src="https://via.placeholder.com/150" alt="" />
+      <nav>
+        <menu>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </menu>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div>
+          <h1>Bienvenidos a mi web</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            numquam!
+          </p>
+        </div>
+        <img src="https://via.placeholder.com/500" alt="" />
+      </section>
+      <section>
+        <h2>Productos</h2>
+
+        <article>
+          <img src="https://via.placeholder.com/150" alt="" />
+          <h3>Producto 1</h3>
+          <p>Lorem ipsum dolor.</p>
+          <button>Comprar</button>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/150" alt="" />
+          <h3>Producto 1</h3>
+          <p>Lorem ipsum dolor.</p>
+          <button>Comprar</button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Hecho con 💖 en NUCBA</p>
+    </footer>
+  </body>
+</html>
