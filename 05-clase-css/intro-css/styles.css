@@ -1,0 +1,51 @@
+/* * {
+  border: 1px solid red;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+p {
+  background-color: crimson ;
+  font-size: 32px;
+  color: bisque;
+}
+
+h1 {
+  color: red;
+}
+
+body {
+  /* background: hsl(210, 62%, 34%); */
+  /* background: rgb(0,0,0); */
+  /* background: rgba(0,0,0, 0.5); */
+}
+
+/* id # */
+#hero {
+  background: greenyellow;
+}
+
+#hero a {
+  border: 1px solid black;
+}
+
+#hero > h1 {
+  background-color: yellow;
+}
+
+/* clases . */
+
+.colorFondo {
+  background-color: yellowgreen;
+}
+
+section {
+
+  background: blue;
+  width: 100vw;
+  height: 90vh;
+}
