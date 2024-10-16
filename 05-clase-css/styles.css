@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --dark: #131415;
+  --primary: crimson;
+
+  --rounded: 8px;
+}
+
+body.darkmode {
+  background-color: var(--white);
+  color: var(--dark);
+}
+body {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 20px;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary);
+  border-radius: var(--rounded);
+  /* margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 60px; */
+  /* margin: 10px; */
+  /* 10px a todos lados*/
+  /* margin: 10px 0; */
+  /* 2 valores: arriba/abajo - Costados */
+  /* margin: 10px 25px 50px; */
+  /* 3 valores: arriba - costados - abajo */
+  /* margin: 10px 20px 30px 40px; */
+  /* 4 valores: arriba - derecha- abajo - izquierda */
+  margin: 10px;
+  /* Atajos iguales en padding */
+  padding: 20px;
+  border: 10px solid blue;
+  /* box sizing */
+  /* Por defecto: content-box */
+  /* box-sizing: border-box; */
+}
+
+.otro {
+  background-color: var(--primary);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  overflow: auto;
+  /* overflow: hidden; */
+  /* scrollbar-color: yellow blue; */
+  /* scrollbar-width: thin; */
+}
+
+.otro::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+/* Ejercicio */
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  background: hsl(0, 0%, 12%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 350px; */
+  max-width: fit-content;
+  padding: 25px;
+  gap: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.card-title p{
+  color: hsl(75, 94%, 57%);
+  font-weight: 800;
+}
+
+.job {
+  font-size: 14px;
+}
+img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link {
+  background: hsl(0, 0%, 20%);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.link:hover {
+  transform: scale(1.05);
+}

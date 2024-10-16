@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Pilowlava';
+  src: url('./fonts/Pilowlava-Atome.woff2')
+}
+
+:root {
+  --primary-color: rgb(219, 51, 219);
+  --font: 'Pilowlava'
+  --font-sm: 10px;
+}
+
+/* :root {
+  font-size: 10px;
+} */
+
+/* body {
+  font-family: 'Englebert', cursive;
+} */
+
+.container {
+  background: #282828;
+  border-radius: 8px ;
+  /* Clase modelo de caja vemos a profundidad estas dos propedades */
+  padding: 16px; /* separacion del contenido y el borde de la caja */
+  margin: 20px 0; /* separacion entre los elementos */
+}
+
+/* CAJAS */
+.caja {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  border-radius: 8px;
+}
+
+.caja-mediana {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.caja-grande {
+  width: 300px;
+  height: 300px;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Selectores */
+/* #nombre {} id */
+#selectorId {
+  color: blueviolet;
+}
+
+/* .nombre {} clase*/
+.selectorClase {
+  color: var(--primary-color);
+}
+
+/* etiqueta {} */
+h5 {
+  color: blueviolet;
+}
+
+/* Unidades relativas */
+/* por defecto el tamaño de letra es de 16px */
+.small-font {
+  font-size: 10px ;
+}
+
+.em {
+  font-size: 2em;
+  /* La fuente es de 20px. Su padre (.small-font) tiene un tamaño de fuente de 10px por ende 10 + 10 = 20 */
+}
+
+.rem {
+  /* La fuente es de 32px. La raiz el root por defecto la fuente es de 16px por ende 16 + 16 = 32 */
+  font-size: 2rem;
+}
+
+.porcentaje {
+  width: 50%;
+  height: 50%;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+.vh {
+  height: 10vh;
+  background-color: var(--primary-color);
+}
+
+/* .section {
+  height: 100vh;
+  background-color: red;
+} */
+
+.vw {
+  width: 10vw;
+  background: var(--primary-color);
+}
+
+.bg-color {
+  background-color: yellowgreen;
+}
+
+.bg-img {
+  background-image: url('./img/bg-pattern.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+.bg-repeat {
+  background-image: url('./img/bg-repeat.png');
+  background-repeat: no-repeat;
+  /* background-size: cover ; */
+}
+
+.bg-attach {
+  /* background-image: url('https://images.unsplash.com/photo-1727197093259-e89dc8ccd8ee?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+  background-image: url('./img/bg-pattern.jpg') ;
+  background-attachment: fixed;
+}
+
+
+/* .bg-position { */
+  /* background-image: url('./img/messi.webp'); */
+  /* background-position: 50% 50%; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-color: black; */
+/* } */
+
+.bg-size {
+  /* background-size: cover; */
+  background: url('./img/messi.webp') center/contain no-repeat;
+}
+
+.color {
+  color: yellow;
+}
+
+/* .caja-shadow {
+  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5) ;
+  box-shadow: -29px -15px 59px 32px rgba(0,0,0,0.73);
+  cursor: pointer;
+} */
+ .caja-shadow {
+  background: blueviolet;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+ }
+
+ /* Box-shadow: X Y BLUR SPREAD COLOR */
+ .offsetXY {
+  box-shadow: 10px 10px ;
+  /* x y */
+ }
+
+ .blurRadius {
+  box-shadow: 10px 10px 10px;
+  /* x y blur */
+ }
+
+ .spreadRadius {
+  box-shadow: 10px 10px 10px 10px;
+  /* x y blur spread */
+ }
+
+ .color-shadow {
+  box-shadow: 10px 10px 10px 10px rgb(31, 175, 180);
+  /* box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2); */
+ }
+
+ .inset {
+  box-shadow: inset 10px 10px 10px 10px rgb(31, 175, 180);
+ }
+
+ .font-family {
+  font-family: 'Englebert', cursive;
+ }
+
+ .font-weight {
+  font-weight: 900 ;
+ }
+
+
+ .font-style {
+  font-style: italic;
+ }
+
+ /* Si quiero cambiar el por defecto del rem cambio en el html o el :root */
+/* 1rem = 16 */
+
+.font-size {
+  /* font-size: 2rem; */
+  font-size: 32px;
+  /* font-size: 1vw; */
+}
+
+.letter-spacing {
+  letter-spacing: 10px;
+}
+
+.word-spacing {
+  word-spacing: 20px;
+}
+
+.line-height {
+  line-height: 150%;
+}
+
+.text-align {
+  /* text-align: center; */
+  text-align: justify;
+}
+
+.transform {
+  text-transform: uppercase;
+  /* text-transform: lowercase; */
+  /* text-transform: capitalize; */
+}
+
+.decoration {
+  /* text-decoration: underline; */
+  text-decoration: line-through;
+}
+
+.container a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 20px;
+  display: block;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.pilowlava {
+  font-family: var(--font)
+}
+
+.list-none {
+  /* list-style: lower-greek; */
+  list-style: none;
+  /* text-align: center; */
+  /* list-style-position: inside; */
+}
+
+.list-position {
+  list-style-position: inside;
+}
+
+.list-img {
+  list-style-image: url('./img/messi-list-img.jpg');
+  list-style-position: inside;
+}

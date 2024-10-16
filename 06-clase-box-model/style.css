@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Debugger */
+  /* border: 1px solid red; */
+}
+
+.container {
+  background-color: #282828;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.caja-box-sizing {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 8px;
+  padding: 10px;
+  border: 10px solid blue;
+}
+
+/* overflow */
+.overflow-box {
+  width: 150px;
+  height: 100px;
+  background-color: blueviolet;
+}
+
+.visible {
+  overflow: visible;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll {
+  /* overflow: scroll; */
+  overflow-y: scroll;
+  /* overflow-x: scroll; */
+}
+
+.auto {
+  overflow: auto;
+}
+
+/* padding */
+.padding {
+  background-color: crimson;
+  border-radius: 6px;
+  /* padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 15px;
+  padding-bottom: 50px; */
+  /* 1 valor: a todos lo lados */
+  /* padding: 20px; */
+  /* 2 valores: arriba/abajo - costados */
+  /* padding: 20px 50px; */
+  /* 3 valores: arriba - costados - abajo */
+  /* padding: 20px 45px 70px; */
+  /* 4 valores: Horario. Arriba => Derecha => Abajo => Izquierda */
+  padding: 20px 15px 50px 45px;
+  /* text-align:  center; */
+}
+
+/* border */
+.border {
+  background-color: crimson;
+  padding: 15px;
+  /* border: 5px solid blueviolet; */
+  border-width: 5px;
+  border-style: solid;
+  border-color: blueviolet;
+  margin-bottom: 20px;
+}
+
+.dashed {
+  border: 5px dashed blueviolet;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.dotted {
+  border: 3px dotted blueviolet;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.double {
+  border: 5px  blueviolet;
+  border-style: double;
+  border-right-color: red;
+  border-top-style: dotted;
+  border-top-width: 5px;
+  border-top-color: green;
+  padding: 5px;
+}
+
+.radius {
+  padding: 10px;
+  background-color: crimson;
+  border-radius: 50px;
+  /* border-radius: 10%; */
+}
+
+
+/* margin */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  /* 16px = por defecto */
+  border-radius: 1rem;
+  margin: 10px 0;
+}
+
+.margin {
+  background-color: blueviolet;
+  /* margin: 20px; */
+  /* Funciona la misma logica que en el padding */
+  /* margin: 20px 0; */
+  /* margin: 20px 0 50px; */
+  /* margin: 10px 0 70px 0; */
+}
+
+.block {
+  border: 1px solid red;
+  /* display: block; */
+}
+
+.inline {
+  border: 1px solid blueviolet;
+  /* display: block; */
+}
+
+/* Positions */
+.relative {
+  background-color: blueviolet;
+  position: relative;
+  /* Al cambiar el tipo de position accedemos a nuevas propiedades que si no cambiamos el position no podemos utilizar */
+  /* top / bottom / left / rigth */
+  /* top: 100px; */
+  /* left: 150px; */
+  /* right: 100px; */
+  /* bottom: 100px; */
+}
+
+.padre {
+  position: relative;
+}
+
+.absolute {
+  background-color: blueviolet;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #25D366;
+  border: 4px solid white;
+  /* text-align: center; */
+
+  /* flex clase que viene */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed img {
+  filter: brightness(100px);
+}
+
+.fix {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+}
+
+
+.otra {
+  height: 100vh;
+}
+.linksito {
+  background-color: blueviolet;
+  padding: 10px 20px;
+  display: block;
+  /* width: fit-content; */
+  position: sticky;
+  /* Hibrido relative y fixed */
+  top: 50px;
+
+}
+
+
