@@ -1,0 +1,298 @@
+.container,
+.ai-container,
+.ac-container {
+  background-color: #282828;
+  padding: 1.05rem;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Cajas que vamos a usar para los ejemplos */
+.caja-flex {
+  background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  /* text-align: center; */
+  /* todo: aplicar flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caja-flex:nth-child(2){
+  background-color: crimson;
+}
+
+/* flex direction */
+.row {
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse; */
+  /* Por defecto, no es necesario colocarlo */
+  gap: 10px;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+/* wrap */
+
+.wrap {
+  max-width: 250px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  max-width: 250px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  gap: 10px;
+}
+
+.flow {
+  max-width: 250px;
+  display: flex;
+  gap: 10px;
+  /* Atajo flex direction y flex wrap */
+  flex-flow: row wrap;
+}
+
+/* Justify content */
+/* Maneja el eje X, a no ser que el flex direction sea column. Si es column maneja el eje Y */
+.jc-start {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+}
+
+.jc-end {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.jc-center {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.jc-between {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  /* excelente para navbars */
+}
+
+.jc-around {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.jc-evenly {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+/* align-items */
+
+.ai-container {
+  display: flex;
+  gap: 10px;
+  min-height: 300px;
+}
+
+
+.ai-start {
+  align-items: flex-start;
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* align-items: stretch; */
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.caja-flex-stretch {
+  background-color: crimson;
+  width: 100px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.ai-stretch {
+  /* Si los items flexibles (hijos) no tienen altura, por defecto es stretch */
+  align-items: stretch;
+}
+
+.caja-flex-baseline {
+  width: 100px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.baseline-1 {
+  background-color: crimson;
+  padding-top: 30px;
+}
+
+.baseline-2 {
+  padding-top: 100px;
+  background-color: blueviolet;
+}
+
+.baseline-3 {
+  padding-top: 50px;
+  background-color: crimson;
+}
+
+.ai-baseline {
+  align-items: baseline;
+}
+
+/* align content */
+.ac-container {
+  height: 350px;
+  max-width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ac-start {
+  align-content: flex-start;
+  /* align-items: center; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+  /* justify-content: space-between; */
+}
+
+.ac-end {
+  /* align-items: flex-end; */
+  align-content: flex-end;
+}
+
+.ac-center {
+  align-content: center;
+}
+
+.ac-between {
+  align-content: space-between;
+}
+
+.ac-around {
+  align-content: space-around;
+}
+
+/* .caja-stretch {
+  width: auto;
+} */
+
+/* .ac-stretch {
+  width: fit-content;
+  align-content: stretch;
+  height: fit-content;
+} */
+
+/* order */
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+/* por defecto es 1 */
+
+.order-1 {
+  order:2;
+}
+
+.order-2 {
+  order: 3;
+}
+
+/* grow */
+
+/* .caja-flex{
+  flex-grow: 1;
+} */
+.grow-1 {
+  background-color: blue;
+  flex-grow: 1;
+}
+
+/* shrink */
+
+.shrink {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.shrink-1 {
+  flex-shrink: 0;
+}
+
+.shrink-2 {
+  flex-shrink: 2;
+}
+
+/* basis */
+.basis-1 {
+  flex-basis: 200px;
+  flex-shrink: 0;
+  /* flex-basis: fill; */
+}
+
+.basis-2 {
+  flex-basis: 300px;
+}
+
+.self {
+  display: flex;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.self-1 {
+  align-self: flex-start;
+}
+
+.self-3 {
+  align-self: flex-end;
+}
