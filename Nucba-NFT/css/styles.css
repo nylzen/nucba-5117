@@ -286,3 +286,54 @@ main {
   font-size: var(--font-sm);
   color: var(--text-gray);
 }
+
+/* ==================================== */
+/* ============ DISCOVER =============  */
+/* ==================================== */
+#discover {
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  /* background-color: green; */
+  /* overflow: hidden; */
+}
+
+.discover-info {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.discover-info h2 {
+  font-size: var(--subtitle);
+  width: 45%;
+}
+
+.discover-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--text-gray);
+}
+
+.discover-text a {
+  color: var(--text-white);
+  text-decoration: underline;
+  font-weight: var(--medium);
+}
+
+.discover-cards {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover-cards img {
+  /* Es a cada imagen dentro de discover-cards le damos un tamano del 30% de los 1200px que tiene el padre (#DISCOVER) */
+  width: 30%;
+}
