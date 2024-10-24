@@ -20,6 +20,7 @@
   --font-sm: 14px;
   --font-md: 24px;
   --title: 48px;
+  --subtitle: 32px;
 
   --bold: 800;
   --medium: 600;
@@ -56,6 +57,32 @@ a {
   border-radius: var(--rounded-sm);
 }
 
+/* Esta es una manera para evitar escribir tanto flex y utilizar clases al estilo de tailwind */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flexalgo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -213,4 +240,49 @@ main {
 .hero-card-price .price {
   font-weight: var(--medium);
   font-size: 16px;
+}
+
+/* ==================================== */
+/* ============== INFO ===============  */
+/* ==================================== */
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  max-width: var(--max-width) ;
+  padding: 5rem 0;
+}
+
+#info h2 {
+  font-size: var(--subtitle);
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: var(--secondary);
+  max-width: 300px;
+  padding: 2rem 1rem;
+  border-radius: var(--rounded-sm);
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+.info-card p {
+  font-size: var(--font-sm);
+  color: var(--text-gray);
 }
