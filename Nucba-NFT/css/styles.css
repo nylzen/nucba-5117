@@ -15,7 +15,7 @@
   --electric: #64d3ff;
 
   /* Fuentes */
-  --font-family: 'Poppins';
+  --font-family: "Poppins";
   --font-xs: 12px;
   --font-sm: 14px;
   --font-md: 24px;
@@ -55,6 +55,12 @@ a {
   border: none;
   padding: 10px 25px;
   border-radius: var(--rounded-sm);
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--electric);
 }
 
 /* Esta es una manera para evitar escribir tanto flex y utilizar clases al estilo de tailwind */
@@ -84,9 +90,6 @@ a {
   align-items: center;
 }
 
-
-
-
 /* ==================================== */
 /* ============== Header =============  */
 /* ==================================== */
@@ -101,7 +104,7 @@ header {
   /* height: 65px; */
 }
 
-.navbar{
+.navbar {
   display: flex;
   gap: 90px;
   /* align-items: center;
@@ -227,7 +230,8 @@ main {
   height: 40px;
 }
 
-.creator-title, .hero-card-price p {
+.creator-title,
+.hero-card-price p {
   color: var(--text-gray);
   font-size: var(--font-xs);
 }
@@ -250,7 +254,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  max-width: var(--max-width) ;
+  max-width: var(--max-width);
   padding: 5rem 0;
 }
 
@@ -336,4 +340,108 @@ main {
 .discover-cards img {
   /* Es a cada imagen dentro de discover-cards le damos un tamano del 30% de los 1200px que tiene el padre (#DISCOVER) */
   width: 30%;
+}
+
+/* ==================================== */
+/* ============ PRODUCTS =============  */
+/* ==================================== */
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem 0;
+  max-width: var(--max-width);
+}
+
+#products h2 {
+  font-size: var(--subtitle);
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.category {
+  background-color: var(--btn-bg);
+  border: none;
+  color: var(--text-white);
+  padding: 10px 15px;
+  border-radius: var(--rounded-sm);
+  cursor: pointer;
+}
+
+/* Para cuando un boton esté activo */
+.category-active {
+  background-color: var(--primary);
+}
+
+/* ctrl + c Copiar */
+/* ctrl + v Pegar */
+/* ctrl + z Volver atras */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.product {
+  background-color: var(--secondary);
+  padding: 1rem;
+  /* Top left  top right bottom right bottom left*/
+  border-radius: 36px 36px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.3rem;
+}
+
+.product-top,
+.product-mid,
+.product-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-top h3 {
+  font-size: 1rem;
+  font-weight: var(--medium);
+}
+
+.product-top p,
+.product-user p {
+  color: var(--text-gray);
+}
+
+.product-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-price {
+  font-weight: var(--medium);
+  font-size: 1.5rem;
+}
+
+.offer-time {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: var(--medium);
+}
+
+.offer-time img {
+  width: 16px;
 }
