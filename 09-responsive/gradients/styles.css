@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  color-scheme: dark;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* div {
+  background-color: gray;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 8px;
+  position: sticky;
+  top: 0px;
+} */
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* h1 {
+  padding: 5rem;
+} */
+.section {
+  height: 95vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  /* height: 100vh; */
+  border-radius: 8px;
+  /* background-color: crimson; */
+  /* background: linear-gradient(crimson, blue) */
+  /* background: linear-gradient(to top, crimson, blue); */
+  /* background:linear-gradient(87deg, crimson, blue, greenyellow); */
+  /* background: linear-gradient(45deg, crimson 20%, blue 20%, greenyellow 100%); */
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(95,190,255,1) 82%); */
+  /* background: linear-gradient(45deg, crimson 50%, blue 50%) */
+  /* background: radial-gradient(crimson, blue); */
+  /* background: radial-gradient(circle, crimson 20%, blue 100%); */
+  background: #6441A5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, crimson, yellow);
+  background-clip: text;
+  color: transparent;
+}
