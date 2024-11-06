@@ -1,0 +1,161 @@
+/* HASTA 992PX APLICAS LO QUE ESTA ACA ABAJO */
+@media (max-width: 992px) {
+  .navbar {
+    gap: 30px;
+  }
+
+  .navbar-list {
+    display: none;
+    background-color: var(--nav-bg);
+    position: absolute;
+    top: 60px;
+    width: 90%;
+    left: 5%;
+    /* El margin 0 auto no anda por el position absolute de arriba */
+    /* margin: 0 auto; */
+    flex-direction: column;
+    padding: 45px;
+    gap: 30px;
+    border-radius: 0px 0px 15px 15px;
+    border: 2px solid var(--electric);
+    border-top: none;
+    font-size: 1.2rem;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 30px;
+  }
+
+  .cart-icon {
+    height: 20px;
+  }
+
+  #menu-toggle:checked ~ .navbar-list {
+    display: flex;
+  }
+
+  /* HERO */
+  #hero {
+    flex-direction: column;
+  }
+  .hero-info {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    order: 2;
+  }
+
+  .hero-info h1 {
+    max-width: 500px;
+  }
+
+  .hero-info p {
+    max-width: 600px;
+  }
+
+  /* .hero-card {
+    display: none;
+  } */
+
+  /* INFO */
+  .info-cards-container {
+    max-width: 90%;
+  }
+
+  /* DISCOVER */
+
+  .discover-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .discover-text {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .discover-cards {
+    flex-direction: column;
+  }
+
+  .discover-cards img {
+    width: 90%;
+  }
+
+  /* Productos */
+
+  .categories {
+    max-width: 400px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .category {
+    width: 120px;
+  }
+
+  .products-container {
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .product img {
+    width: 100%;
+  }
+}
+
+/* Celu */
+@media (max-width: 576px){
+  .cart {
+    width: 100%;
+    left: 0;
+  }
+
+  .cart-items-container {
+    overflow-y: scroll;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  /* Hero */
+  .hero-info h1 {
+    font-size: 2rem;
+  }
+
+  .hero-info p{
+    font-size: 1rem;
+  }
+
+  #info h2 {
+    text-align: center;
+  }
+
+  #discover h2 {
+    width: 100%;
+  }
+
+  .discover-text {
+    width: 80%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}

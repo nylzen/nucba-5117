@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nucba NFT</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +20,11 @@
       <img src="./img/logo.png" alt="Logo Nucba" class="logo" />
       <!-- Nav -->
       <nav class="navbar">
+        <!-- menu hamburguesa -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./img/menu.png" alt="" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li class="active"><a href="#hero">Home</a></li>
           <li><a href="#">Descubre</a></li>
@@ -26,7 +32,80 @@
           <li><a href="#">YouTube</a></li>
           <li><a href="#">Contactanos</a></li>
         </ul>
-        <img src="./img/cart-icon.svg" alt="" class="cart-icon" />
+
+        <!-- carrito -->
+        <label for="cart-toggle">
+          <img src="./img/cart-icon.svg" alt="" class="cart-icon" />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+
+        <div class="cart">
+          <h2>Tus NFTS</h2>
+
+          <article class="cart-items-container">
+            <article class="cart-item">
+              <img src="./img/cart/cart-img.png" alt="alonso" />
+              <!-- Info -->
+              <div class="item-info">
+                <h3 class="item-title">Alonso</h3>
+                <p class="item-bid">Current bid</p>
+                <span class="item-price">4.8 ETH</span>
+              </div>
+              <!-- /info -->
+              <!-- Handler Qty -->
+              <div class="item-handler">
+                <button class="quantity-handler down">-</button>
+                <span class="item-quantity">1</span>
+                <button class="quantity-handler up">+</button>
+              </div>
+              <!-- /handler qty -->
+            </article>
+            <!-- Item 2 -->
+            <article class="cart-item">
+              <img src="./img/cart/cart-img.png" alt="alonso" />
+              <!-- Info -->
+              <div class="item-info">
+                <h3 class="item-title">Alonso</h3>
+                <p class="item-bid">Current bid</p>
+                <span class="item-price">4.8 ETH</span>
+              </div>
+              <!-- /info -->
+              <!-- Handler Qty -->
+              <div class="item-handler">
+                <button class="quantity-handler down">-</button>
+                <span class="item-quantity">1</span>
+                <button class="quantity-handler up">+</button>
+              </div>
+              <!-- /handler qty -->
+            </article>
+            <!-- Item 3 -->
+            <article class="cart-item">
+              <img src="./img/cart/cart-img.png" alt="alonso" />
+              <!-- Info -->
+              <div class="item-info">
+                <h3 class="item-title">Alonso</h3>
+                <p class="item-bid">Current bid</p>
+                <span class="item-price">4.8 ETH</span>
+              </div>
+              <!-- /info -->
+              <!-- Handler Qty -->
+              <div class="item-handler">
+                <button class="quantity-handler down">-</button>
+                <span class="item-quantity">1</span>
+                <button class="quantity-handler up">+</button>
+              </div>
+              <!-- /handler qty -->
+            </article>
+          </article>
+
+          <hr class="divider" />
+
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>18 ETH</span>
+          </div>
+          <button class="btn">Comprar</button>
+        </div>
       </nav>
     </header>
     <main>

@@ -13,6 +13,7 @@
   --text-white: #f3f4f6;
   --fire: #ff6d00;
   --electric: #64d3ff;
+  --bg-cart-item: #2323234e;
 
   /* Fuentes */
   --font-family: "Poppins";
@@ -98,10 +99,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--secondary);
+  /* background: var(--secondary); */
   padding: 15px 30px;
   color: var(--text-gray);
   /* height: 65px; */
+  background: linear-gradient(#121e3c, var(--background));
+  position: fixed;
+  width: 100%;
 }
 
 .navbar {
@@ -129,6 +133,112 @@ header {
 body {
   background-color: var(--background);
   color: var(--text-white);
+}
+
+/* INPUTS */
+#cart-toggle,
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+/* Carrito */
+.cart {
+  background: linear-gradient(to top, #121e3c, var(--background));
+  position: absolute;
+  right: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  color: white;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  display: none;
+}
+
+.cart-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid var(--electric);
+  border-radius: 8px;
+  padding: 20px;
+  background-color:  var(--bg-cart-item);
+}
+
+.cart-item img {
+  height: 65px;
+}
+
+.item-title {
+  color: var(--text-white);
+  font-size: var(--font-sm);
+}
+
+.item-bid {
+  color: var(--text-gray);
+  font-size: var(--font-xs);
+}
+
+.item-price {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  font-weight: var(--bold);
+  color: transparent;
+  background-clip: text;
+}
+
+.item-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-handler {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: var(--text-white);
+  background-color: transparent;
+}
+
+.up {
+  border: 1px solid var(--electric) ;
+}
+
+.down {
+  border: 1px solid var(--electric);
+  background-color: var(--secondary);
+}
+
+.divider {
+  border: 0.5px solid var(--electric);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #cart-toggle:checked + .cart {
+  background: red;
+} */
+
+#cart-toggle:checked ~ .cart {
+  display: flex;
 }
 
 /* ==================================== */
