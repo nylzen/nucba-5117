@@ -1,11 +1,14 @@
 /* HASTA 992PX APLICAS LO QUE ESTA ACA ABAJO */
 @media (max-width: 992px) {
+  header {
+    z-index: 2;
+  }
   .navbar {
     gap: 30px;
   }
 
   .navbar-list {
-    display: none;
+    /* display: none; */
     background-color: var(--nav-bg);
     position: absolute;
     top: 60px;
@@ -20,6 +23,10 @@
     border: 2px solid var(--electric);
     border-top: none;
     font-size: 1.2rem;
+    scale: 1 0;
+    transition: all 0.2s;
+    transform-origin: top right;
+    z-index: 5;
   }
 
   .menu-label {
@@ -33,12 +40,47 @@
     width: 30px;
   }
 
+  /* ESTO VA EN EL MEDIAQUERIES.CSS */
+  .menu-label {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .menu-line {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transition: all 0.2s;
+  }
+
+  /*
+#menu-toggle:checked ~ label .menu-icon .menu-line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+} */
+
+  #menu-toggle:checked ~ label .menu-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #menu-toggle:checked ~ label .menu-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked ~ label .menu-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
   .cart-icon {
     height: 20px;
   }
 
   #menu-toggle:checked ~ .navbar-list {
-    display: flex;
+    /* display: flex; */
+    scale: 1 1;
   }
 
   /* HERO */
@@ -58,6 +100,10 @@
 
   .hero-info p {
     max-width: 600px;
+  }
+
+  .hero-card {
+    z-index: -2;
   }
 
   /* .hero-card {
@@ -119,7 +165,7 @@
 }
 
 /* Celu */
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .cart {
     width: 100%;
     left: 0;
@@ -138,7 +184,7 @@
     font-size: 2rem;
   }
 
-  .hero-info p{
+  .hero-info p {
     font-size: 1rem;
   }
 

@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nucba NFT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <link rel="stylesheet" href="./css/animaciones.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,10 +29,13 @@
       <!-- Nav -->
       <nav class="navbar">
         <!-- menu hamburguesa -->
-        <label for="menu-toggle" class="menu-label">
-          <img src="./img/menu.png" alt="" class="menu-icon" />
-        </label>
         <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-label">
+          <!-- <img src="./img/menu.png" alt="" class="menu-icon" /> -->
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </label>
         <ul class="navbar-list">
           <li class="active"><a href="#hero">Home</a></li>
           <li><a href="#">Descubre</a></li>
@@ -35,7 +46,8 @@
 
         <!-- carrito -->
         <label for="cart-toggle">
-          <img src="./img/cart-icon.svg" alt="" class="cart-icon" />
+          <!-- <img src="./img/cart-icon.svg" alt="" class="cart-icon" /> -->
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
         </label>
         <input type="checkbox" id="cart-toggle" />
 
@@ -106,13 +118,15 @@
           </div>
           <button class="btn">Comprar</button>
         </div>
+
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
       <!-- Hero -->
       <section id="hero">
         <div class="hero-info">
-          <h1>Descubre la nueva era de Crypto</h1>
+          <h1>Descubre la nueva era de <span>Crypto</span></h1>
           <p>
             NUCBA NFT es el primer Marketplace educativo tecnológico de NFT, que
             son elementos digitales épicos que realmente puedes poseer. Los
