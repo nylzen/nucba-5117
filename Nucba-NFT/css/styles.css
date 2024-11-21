@@ -105,6 +105,11 @@ a {
 /* ============== Header =============  */
 /* ==================================== */
 
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -116,6 +121,7 @@ header {
   background: linear-gradient(#121e3c, var(--background));
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .navbar {

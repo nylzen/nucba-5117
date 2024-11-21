@@ -1,0 +1,217 @@
+.container {
+  background-color: #282828;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+
+/* selector:pseudoclase {} */
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 6px;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .caja:hover {
+  background-color: rebeccapurple;
+  width: 200px;
+} */
+
+/* .caja:active {
+  background-color: yellow;
+} */
+
+.pepito {
+  background-color: red;
+  color: white;
+}
+
+.pepito:active {
+  color: greenyellow;
+  background-color: blue;
+}
+
+/* Visited es para el enlace que se ha visitado */
+/* Por defecto el color es el violeta */
+.visited:visited {
+  color: greenyellow;
+}
+
+/* Link es para el enlace que no se ha visitado*/
+/* Por defecto es azul */
+.link:link {
+  color: yellow;
+}
+
+.link:visited {
+  color: yellow;
+}
+
+.focus-input {
+  padding: 5px 10px;
+  outline: none;
+}
+
+.focus-input:focus {
+  border: 2px solid crimson;
+  outline: 2px solid blue;
+  border-radius: 2px;
+  background-color: yellow;
+}
+
+/* First-child */
+.first .caja:first-child {
+  background-color: transparent;
+  border: 1px solid crimson;
+}
+
+.last .caja:last-child {
+  color: black;
+  background-color: greenyellow;
+}
+
+.first-of-type {
+  flex-direction: column;
+}
+
+.first-of-type p:first-of-type {
+  color: blueviolet;
+}
+
+.nth-child-odd .caja:nth-child(odd) {
+  background-color: seagreen;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.332);
+}
+
+.nth-child-even .caja:nth-child(even) {
+  background-color: cornflowerblue;
+}
+
+.nth-child-number .caja:nth-child(2) {
+  background-color: blue;
+}
+
+.nth-child-number-n .caja:nth-child(3n) {
+  background-color: green;
+}
+
+.nth-child-n-number .caja:nth-child(3n + 4) {
+  background-color: cornflowerblue;
+}
+
+.nth-of-type {
+  flex-direction: column;
+}
+
+/* Podemos usar lo mismo que nth-child (even/odd/2/2n/2n+3) */
+.nth-of-type p:nth-of-type(-n + 3) {
+  background-color: crimson;
+}
+
+/* selector::pseudoelemento{} */
+.first-letter::first-letter {
+  color: crimson;
+  background-color: #000;
+  font-size: 5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* .algo {
+  background-color: blue;
+  font-size: 2rem;
+} */
+
+.first-line::first-line {
+  background-color: red;
+}
+
+.input-placeholder::placeholder {
+  color: blue;
+  font-weight: 800;
+}
+
+/* Obligacion para que el before o el after funcionen.
+Es darle la propiedad de 'content'
+*/
+.before::before {
+  content: "🍕";
+  font-size: 2rem;
+}
+
+.after::after {
+  content: "👽";
+  font-size: 2rem;
+  background-color: red;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+/* .lista li::before {
+  content: "✅";
+  margin-right: 15px;
+} */
+
+.lista li::marker {
+  content: '✅'
+}
+
+.contenedor {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all .3s;
+  position: relative;
+  transition: all .2s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: -100%;
+  /* transform: translateX(-100%); */
+  transition: all .2s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  left: 0;
+  /* transform: translateX(0%); */
+}
+
+.logos i {
+  font-size: 2rem;
+}
+
+
+

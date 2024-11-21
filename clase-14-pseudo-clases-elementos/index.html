@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo-nucba.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos base de la página que usamos como template -->
+    <link rel="stylesheet" href="base.css" />
+    <!-- Estilos de la clase -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>CSS - PseudoElementos/Clases</title>
+  </head>
+
+  <body>
+    <h1>
+      1.12 PseudoClases/Elementos
+      <img src="./img/logo-nucba.png" alt="logo" class="logo" />
+    </h1>
+    <hr class="hr" />
+
+    <!--------------------------- Pseudoclases ----------------------------->
+    <!--------------------------- Hover ----------------------------->
+
+    <h2>Hover</h2>
+
+    <div class="container">
+      <div class="caja"></div>
+    </div>
+
+    <hr class="hr" />
+
+    <!--------------------------- Active | Link | Visited ----------------------------->
+
+    <h2>Active | Link | Visited</h2>
+
+    <span class="text-span">👉 active</span>
+
+    <div class="container">
+      <a href="#" class="pepito">nucba.algo</a>
+    </div>
+
+    <span class="text-span">👉 visited</span>
+
+    <div class="container">
+      <a href="#ajsdlfasdf" class="visited">hola</a>
+    </div>
+
+    <span class="text-span">👉 link</span>
+
+    <div class="container">
+      <a href="#aasdfasdf" class="link">Visita este link</a>
+    </div>
+
+    <!-- <a href="#192300912012">hola</a> -->
+
+    <hr class="hr" />
+    <!--------------------------- Focus ----------------------------->
+    <h2>Focus</h2>
+
+    <div class="container">
+      <input type="text" class="focus-input" placeholder="Messi" />
+    </div>
+
+    <!--------------------------- Childs ----------------------------->
+    <h2>Childs</h2>
+
+    <span class="text-span">👉 first-child</span>
+
+    <div class="container first">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+    </div>
+
+    <span class="text-span">👉 last-child</span>
+
+    <div class="container last">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+    </div>
+
+    <span class="text-span">👉 first of type</span>
+
+    <div class="container first-of-type">
+      <h2>Posteo N 1</h2>
+      <h3>Subtitle</h3>
+
+      <p>Parrafo 1</p>
+      <p>Hola</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        accusantium dolorem laudantium? Provident, mollitia consequuntur aliquid
+        eveniet cum ex quo unde hic vero minima rem praesentium, sapiente,
+        exercitationem odio fugit! Saepe error, ducimus delectus laudantium,
+        voluptatem quam beatae iste consequatur laboriosam temporibus earum ipsa
+        necessitatibus nihil omnis tenetur eligendi asperiores deserunt optio
+        quasi sed minima molestias id natus. Iusto deleniti dicta quia optio
+        quod cumque delectus, ex accusantium veritatis ullam repellendus maiores
+        sed, voluptas voluptatibus magnam aperiam repellat necessitatibus.
+        Recusandae fugiat necessitatibus dolores! Est atque provident nesciunt
+        libero totam ipsa excepturi inventore at, omnis, iste possimus.
+        Consectetur inventore reiciendis culpa!
+      </p>
+    </div>
+
+    <span class="text-span">👉 nth-child(odd)</span>
+
+    <div class="container nth-child-odd">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+      <div class="caja">5</div>
+      <div class="caja">6</div>
+      <div class="caja">7</div>
+    </div>
+
+    <div class="container">
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>email</th>
+        </tr>
+        <tr>
+          <td>lionel</td>
+          <td>messi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>lionel</td>
+          <td>messi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>lionel</td>
+          <td>messi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>lionel</td>
+          <td>messi@gmail.com</td>
+        </tr>
+      </table>
+    </div>
+
+    <span class="text-span">👉 nth-child(even)</span>
+
+    <div class="container nth-child-even">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+      <div class="caja">5</div>
+      <div class="caja">6</div>
+      <div class="caja">7</div>
+    </div>
+
+    <span class="text-span">👉 nth-child(number)</span>
+
+    <div class="container nth-child-number">
+      <div class="caja">A</div>
+      <div class="caja">B</div>
+      <div class="caja">C</div>
+      <div class="caja">C</div>
+    </div>
+
+    <span class="text-span">👉 nth-child(number n )</span>
+
+    <div class="container nth-child-number-n">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+      <div class="caja">5</div>
+      <div class="caja">6</div>
+      <div class="caja">7</div>
+      <div class="caja">8</div>
+    </div>
+
+    <span class="text-span">👉 nth-child(number n + number)</span>
+
+    <div class="container nth-child-n-number">
+      <div class="caja">1</div>
+      <div class="caja">2</div>
+      <div class="caja">3</div>
+      <div class="caja">4</div>
+      <div class="caja">5</div>
+      <div class="caja">6</div>
+      <div class="caja">7</div>
+      <div class="caja">8</div>
+    </div>
+
+    <!-- dudas -->
+    <span class="text-span">DUDA DEL CHAT</span>
+
+    <div class="container nth-of-type">
+      <h1>Hola</h1>
+      <p>Primer párrafo</p>
+      <p>Segundo párrafo</p>
+      <p>Tercer párrafo</p>
+      <p>Cuarto párrafo</p>
+      <p>Quinto párrafo</p>
+    </div>
+
+    <hr class="hr" />
+    <!--------------------------- Pseudoelementos ----------------------------->
+    <h2>Pseudoelementos</h2>
+    <span class="text-span">👉 First letter</span>
+
+    <div class="container">
+      <p class="first-letter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi enim quo,
+        laudantium vel earum similique ex adipisci esse atque explicabo illo ut
+        quaerat voluptatibus id, minus dolores magnam consequatur officiis neque
+        dolore fuga. Eum, sapiente. Placeat temporibus deserunt praesentium
+        ratione. Deleniti corporis amet, repudiandae cupiditate vero inventore
+        quam odio accusamus illo veniam optio soluta a cumque facilis sed,
+        perspiciatis numquam aperiam adipisci quidem accusantium sunt?
+        Consequuntur asperiores corrupti ab omnis sapiente dignissimos sequi
+        eveniet dicta perspiciatis. Tempora sit fugit, natus nobis eius optio ut
+        doloremque esse animi quam expedita eligendi delectus corporis nihil
+        distinctio architecto neque iure, dignissimos enim fuga!
+      </p>
+    </div>
+
+    <span class="text-span">👉 First line</span>
+    <div class="container">
+      <p class="first-line">
+        Lorem <span class="algo">ipsum</span> dolor sit amet consectetur
+        adipisicing elit. Quasi enim quo, laudantium vel earum similique ex
+        adipisci esse atque explicabo illo ut quaerat voluptatibus id, minus
+        dolores magnam consequatur officiis neque dolore fuga. Eum, sapiente.
+        Placeat temporibus deserunt praesentium ratione. Deleniti corporis amet,
+        repudiandae cupiditate vero inventore quam odio accusamus illo veniam
+        optio soluta a cumque facilis sed, perspiciatis numquam aperiam adipisci
+        quidem accusantium sunt? Consequuntur asperiores corrupti ab omnis
+        sapiente dignissimos sequi eveniet dicta perspiciatis. Tempora sit
+        fugit, natus nobis eius optio ut doloremque esse animi quam expedita
+        eligendi delectus corporis nihil distinctio architecto neque iure,
+        dignissimos enim fuga!
+      </p>
+    </div>
+    <span class="text-span">👉 placeholder</span>
+
+    <div class="container">
+      <input type="text" placeholder="hola" class="input-placeholder" />
+    </div>
+
+    <span class="text-span">👉 before</span>
+
+    <div class="container">
+      <p class="before">Hola tengo un before</p>
+    </div>
+
+    <span class="text-span">👉 after</span>
+
+    <div class="container">
+      <p class="after">Hola tengo un after</p>
+    </div>
+
+    <ul class="lista">
+      <li>algo</li>
+      <li>algo</li>
+      <li>algo</li>
+      <li>algo</li>
+    </ul>
+
+    <div class="contenedor">
+      <a href="#" class="btn">Comprar ahora</a>
+    </div>
+
+    <h1 class="animate__animated animate__backInLeft">An animated element</h1>
+
+    <div class="logos">
+    <i class="fa-brands fa-square-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+  </body>
+</html>

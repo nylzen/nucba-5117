@@ -1,0 +1,48 @@
+/*
+Max width lo vamos a usar cuando hagamos desktop first o sea queremos ir de PC a celu
+*/
+@media (max-width: 1280px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: red;
+    left: 0;
+    top: 60px;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: black;
+  }
+
+  #menu-toggle:checked ~ .menu-list {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  main {
+    padding: 0 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  #hero img {
+    width: 100%;
+  }
+}
